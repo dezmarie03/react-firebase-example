@@ -5,7 +5,6 @@ import SignOut from '../SignOut';
 
 import { AuthUserContext } from '../../constants/context';
 import * as ROUTES from '../../constants/routes';
-import * as ROLES from '../../constants/roles';
 
 const Navigation = () => (
   <nav>
@@ -17,7 +16,7 @@ const Navigation = () => (
   </nav>
 );
 
-const NavigationAuth = ({ authUser }) => (
+const NavigationAuth = () => (
   <ul>
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
@@ -28,11 +27,6 @@ const NavigationAuth = ({ authUser }) => (
     <li>
       <Link to={ROUTES.ACCOUNT}>Account</Link>
     </li>
-    {!!authUser.roles[ROLES.ADMIN] && (
-      <li>
-        <Link to={ROUTES.ADMIN}>Admin</Link>
-      </li>
-    )}
     <li>
       <SignOut />
     </li>

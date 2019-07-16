@@ -16,7 +16,8 @@ const Account = () => (
         <code>withAuthorization</code>.</p>
         <p>The ability to modify the user's account is 
           controlled by <code>AuthUserContext</code>.</p>
-        <PasswordForgetForm />
+        <br /><br />
+        <h2>Change Password</h2>
         <PasswordChange />
       </div>
     )}
