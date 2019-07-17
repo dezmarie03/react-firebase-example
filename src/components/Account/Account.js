@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { PasswordForgetForm } from '../PasswordForget';
 import PasswordChange from '../PasswordChange';
 
 import { withAuthorization } from '../Session';
